@@ -9,7 +9,7 @@ def load_library(path)
     "get_meaning" => {}
   }
   emoticon_spec.keys.each do |emoticon_meaning|
-    #binding.pry
+    binding.pry
     return_hash["get_meaning"][emoticon_spec[emoticon_meaning][1]] = emoticon_meaning
   end
   #binding.pry
