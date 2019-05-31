@@ -10,7 +10,7 @@ def load_library(path)
   }
   emoticon_spec.keys.each do |emoticon_meaning|
     binding.pry
-    return_hash["get_meaning"][emoticon_spec[emoticon_meaning][1]] => emoticon_meaning
+    return_hash["get_meaning"][emoticon_spec[emoticon_meaning][1]] = emoticon_meaning
   end
   #binding.pry
   backwards_spec = emoticon_spec.invert
